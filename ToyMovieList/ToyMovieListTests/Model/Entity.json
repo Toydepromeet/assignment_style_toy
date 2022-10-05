@@ -1,0 +1,69 @@
+
+{
+	"boxOfficeResult": {
+		"boxofficeType": "일별 박스오피스",
+		"showRange": "20210930~20210930",
+		"dailyBoxOfficeList": [
+			{
+				"rnum": "1",
+				"rank": "1",
+				"rankInten": "0",
+				"rankOldAndNew": "OLD",
+				"movieCd": "20191061",
+				"movieNm": "007 노 타임 투 다이",
+				"openDt": "2021-09-29",
+				"salesAmt": "700955850",
+				"salesShare": "63.4",
+				"salesInten": "-86048400",
+				"salesChange": "-10.9",
+				"salesAcc": "1487960100",
+				"audiCnt": "76380",
+				"audiInten": "-27814",
+				"audiChange": "-26.7",
+				"audiAcc": "180574",
+				"scrnCnt": "2071",
+				"showCnt": "6608"
+			},
+			{
+				"rnum": "2",
+				"rank": "2",
+				"rankInten": "0",
+				"rankOldAndNew": "OLD",
+				"movieCd": "20190815",
+				"movieNm": "보이스",
+				"openDt": "2021-09-15",
+				"salesAmt": "164524020",
+				"salesShare": "14.9",
+				"salesInten": "-17854640",
+				"salesChange": "-9.8",
+				"salesAcc": "10139559510",
+				"audiCnt": "18136",
+				"audiInten": "-6287",
+				"audiChange": "-25.7",
+				"audiAcc": "1029282",
+				"scrnCnt": "793",
+				"showCnt": "2206"
+			},
+			{
+				"rnum": "3",
+				"rank": "3",
+				"rankInten": "0",
+				"rankOldAndNew": "OLD",
+				"movieCd": "20200474",
+				"movieNm": "기적",
+				"openDt": "2021-09-15",
+				"salesAmt": "78475910",
+				"salesShare": "7.1",
+				"salesInten": "-18372240",
+				"salesChange": "-19",
+				"salesAcc": "4585456660",
+				"audiCnt": "8978",
+				"audiInten": "-4331",
+				"audiChange": "-32.5",
+				"audiAcc": "487613",
+				"scrnCnt": "640",
+				"showCnt": "1258"
+			},
+		]
+	}
+}
