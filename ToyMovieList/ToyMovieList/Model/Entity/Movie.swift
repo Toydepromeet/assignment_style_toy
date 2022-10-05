@@ -5,7 +5,7 @@
 //  Created by Yongwoo Marco on 2022/09/30.
 //
 
-protocol Movie: Identifiable, Decodable {
+protocol Movie: Identifiable, NetworkResponse {
 	var id: String { get }
 	var name: String { get }
 }

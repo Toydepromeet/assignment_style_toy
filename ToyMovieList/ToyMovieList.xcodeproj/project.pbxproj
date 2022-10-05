@@ -17,6 +17,7 @@
 		A9EA7B3328EC206B0030F0A4 /* EntityDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA7B2E28EC206B0030F0A4 /* EntityDecodingTests.swift */; };
 		A9EA7B3428EC206B0030F0A4 /* ToyMovieListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA7B2F28EC206B0030F0A4 /* ToyMovieListTests.swift */; };
 		A9EA7B3528EC206B0030F0A4 /* XCTTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA7B3128EC206B0030F0A4 /* XCTTestCase.swift */; };
+		A9EA7B4D28ED70CC0030F0A4 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA7B4C28ED70CC0030F0A4 /* NetworkResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		A9EA7B2E28EC206B0030F0A4 /* EntityDecodingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityDecodingTests.swift; sourceTree = "<group>"; };
 		A9EA7B2F28EC206B0030F0A4 /* ToyMovieListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToyMovieListTests.swift; sourceTree = "<group>"; };
 		A9EA7B3128EC206B0030F0A4 /* XCTTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTTestCase.swift; sourceTree = "<group>"; };
+		A9EA7B4C28ED70CC0030F0A4 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			children = (
 				A9EA7B2728EC20440030F0A4 /* Movie.swift */,
 				A9EA7B2828EC20440030F0A4 /* Page.swift */,
+				A9EA7B4C28ED70CC0030F0A4 /* NetworkResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9EA7B2928EC20440030F0A4 /* ContentView.swift in Sources */,
+				A9EA7B4D28ED70CC0030F0A4 /* NetworkResponse.swift in Sources */,
 				A97AC50128E6E6C500C7FF09 /* ToyMovieListApp.swift in Sources */,
 				A9EA7B2B28EC20440030F0A4 /* Page.swift in Sources */,
 				A9EA7B2A28EC20440030F0A4 /* Movie.swift in Sources */,

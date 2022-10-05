@@ -13,7 +13,7 @@ class EntityDecodingTests: XCTestCase {
 	func test_JSON데이터_디코딩하면_DailyBoxOfficeMovie_인스턴스_생성됨() throws {
 		// give
 		let decoder = JSONDecoder()
-		let jsonData = try! getData(fromJSON: "Entity")
+		let jsonData = try getData(fromJSON: "Entity")
 		
 		// when
 		let result = try decoder.decode(DailyBoxOfficeResult.self, from: jsonData)
