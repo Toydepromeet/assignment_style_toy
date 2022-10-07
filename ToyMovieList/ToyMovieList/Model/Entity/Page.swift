@@ -7,12 +7,15 @@
 
 protocol Page: NetworkResponse {
 	associatedtype Item
+	static var EMPTY: Self { get }
 	var name: String { get }
 	var list: [Item] { get }
 }
 
 struct DailyBoxOfficePage: Page {
 	typealias Item = DailyBoxOfficeMovie
+	
+	static let EMPTY: Self = .init(name: "EMPTY", list: [])
 	
 	enum CodingKeys: String, CodingKey {
 		case name = "boxofficeType"
