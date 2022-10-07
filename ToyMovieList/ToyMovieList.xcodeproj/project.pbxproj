@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90456F628F06D7100E8AAA4 /* NetworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = A90456F528F06D7100E8AAA4 /* NetworkInfo.plist */; };
+		A90456F828F0723F00E8AAA4 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90456F728F0723F00E8AAA4 /* AppError.swift */; };
 		A9CEF25F28F0055300F454BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CEF25328F0055300F454BE /* Assets.xcassets */; };
 		A9CEF26028F0055300F454BE /* ToyMovieListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEF25428F0055300F454BE /* ToyMovieListApp.swift */; };
 		A9CEF26128F0055300F454BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CEF25628F0055300F454BE /* Preview Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A90456F528F06D7100E8AAA4 /* NetworkInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NetworkInfo.plist; sourceTree = "<group>"; };
+		A90456F728F0723F00E8AAA4 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		A97AC4FD28E6E6C500C7FF09 /* ToyMovieList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToyMovieList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97AC50D28E6E6C700C7FF09 /* ToyMovieListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToyMovieListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CEF25328F0055300F454BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 				A9CEF25528F0055300F454BE /* Preview Content */,
 				A9CEF25328F0055300F454BE /* Assets.xcassets */,
 				A9CEF25428F0055300F454BE /* ToyMovieListApp.swift */,
+				A90456F728F0723F00E8AAA4 /* AppError.swift */,
 				A9CEF26C28F0063700F454BE /* Util */,
 				A9CEF26728F005B200F454BE /* Extension */,
 				A9CEF25728F0055300F454BE /* Model */,
@@ -181,6 +186,7 @@
 			children = (
 				A9CEF26E28F0065700F454BE /* API.swift */,
 				A9CEF27228F0069D00F454BE /* NetworkRequest.swift */,
+				A90456F528F06D7100E8AAA4 /* NetworkInfo.plist */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9CEF26128F0055300F454BE /* Preview Assets.xcassets in Resources */,
+				A90456F628F06D7100E8AAA4 /* NetworkInfo.plist in Resources */,
 				A9CEF25F28F0055300F454BE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +341,7 @@
 			files = (
 				A9CEF26228F0055300F454BE /* Movie.swift in Sources */,
 				A9CEF28428F017F500F454BE /* DailyBoxOfficeListModel.swift in Sources */,
+				A90456F828F0723F00E8AAA4 /* AppError.swift in Sources */,
 				A9CEF26528F0055300F454BE /* ContentView.swift in Sources */,
 				A9CEF26028F0055300F454BE /* ToyMovieListApp.swift in Sources */,
 				A9CEF26928F005C100F454BE /* Date+.swift in Sources */,

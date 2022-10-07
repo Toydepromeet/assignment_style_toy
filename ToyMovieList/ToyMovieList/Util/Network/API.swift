@@ -25,9 +25,15 @@ struct KoficAPI: API {
 	private let baseURL: URL
 	private let key: String
 	
-	init() {
-		let baseURL = URL(string: "http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice")! // TODO: 변경예정
-		let key = "90cafe1ff99c0f670078efe35f4e4120" // TODO: 변경예정
+	init() throws {
+		guard let filePath = Bundle.main.path(forResource: "NetworkInfo", ofType: "plist"),
+			  let plist = NSDictionary(contentsOfFile: filePath),
+			  let key = plist["API_KEY"] as? String,
+			  let host = plist["HOST_URL"] as? String,
+			  let baseURL = URL(string: host)
+		else {
+			throw AppError.local(.loadFileFailure)
+		}
 		self.baseURL = baseURL
 		self.key = key
 	}
@@ -44,10 +50,9 @@ struct KoficAPI: API {
 extension KoficAPI {
 
 	private func fetchDailyBoxOfficeList() -> NetworkRequest<DailyBoxOfficeResult> {
-		let calendar = Calendar.current
-		let lastDate = calendar.date(byAdding: .day, value: -1, to: Date()) ?? Date()
+		let lastDate = Date.yesterday
 		let description = baseURL.appendingPathComponent("searchDailyBoxOfficeList.json")
-		let queries = ["key": key, "targetDt": lastDate.formattedTargetDt()]
+		let queries = ["key": key, "targetDt": lastDate.formattedTargetDate()]
 		return NetworkRequest<DailyBoxOfficeResult>(base: description, queries: queries)
 	}
 	

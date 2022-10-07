@@ -11,7 +11,11 @@ extension Date {
 	
 	static let formatter = DateFormatter()
 	
-	func formattedTargetDt() -> String {
+	static var yesterday: Date {
+		Calendar.current.date(byAdding: .day, value: -1, to: Self()) ?? Self()
+	}
+	
+	func formattedTargetDate() -> String {
 		Self.formatter.dateFormat = "yyyyMMdd"
 		return Self.formatter.string(from: self)
 	}
