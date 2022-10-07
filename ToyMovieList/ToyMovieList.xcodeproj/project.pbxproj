@@ -21,6 +21,7 @@
 		A9CEF27C28F00C4E00F454BE /* MockNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEF27B28F00C4E00F454BE /* MockNetworkRequest.swift */; };
 		A9CEF28028F0123B00F454BE /* NetworkRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEF27F28F0123B00F454BE /* NetworkRequestTests.swift */; };
 		A9CEF28228F0146200F454BE /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEF28128F0146200F454BE /* APITests.swift */; };
+		A9CEF28428F017F500F454BE /* DailyBoxOfficeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEF28328F017F400F454BE /* DailyBoxOfficeListModel.swift */; };
 		A9EA7B3228EC206B0030F0A4 /* Entity.json in Resources */ = {isa = PBXBuildFile; fileRef = A9EA7B2D28EC206B0030F0A4 /* Entity.json */; };
 		A9EA7B3328EC206B0030F0A4 /* EntityDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA7B2E28EC206B0030F0A4 /* EntityDecodingTests.swift */; };
 		A9EA7B3428EC206B0030F0A4 /* ToyMovieListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA7B2F28EC206B0030F0A4 /* ToyMovieListTests.swift */; };
@@ -54,6 +55,7 @@
 		A9CEF27B28F00C4E00F454BE /* MockNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkRequest.swift; sourceTree = "<group>"; };
 		A9CEF27F28F0123B00F454BE /* NetworkRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestTests.swift; sourceTree = "<group>"; };
 		A9CEF28128F0146200F454BE /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
+		A9CEF28328F017F400F454BE /* DailyBoxOfficeListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyBoxOfficeListModel.swift; sourceTree = "<group>"; };
 		A9EA7B2D28EC206B0030F0A4 /* Entity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Entity.json; sourceTree = "<group>"; };
 		A9EA7B2E28EC206B0030F0A4 /* EntityDecodingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityDecodingTests.swift; sourceTree = "<group>"; };
 		A9EA7B2F28EC206B0030F0A4 /* ToyMovieListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToyMovieListTests.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		A9CEF25728F0055300F454BE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A9CEF28328F017F400F454BE /* DailyBoxOfficeListModel.swift */,
 				A9CEF25828F0055300F454BE /* Entity */,
 			);
 			path = Model;
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9CEF26228F0055300F454BE /* Movie.swift in Sources */,
+				A9CEF28428F017F500F454BE /* DailyBoxOfficeListModel.swift in Sources */,
 				A9CEF26528F0055300F454BE /* ContentView.swift in Sources */,
 				A9CEF26028F0055300F454BE /* ToyMovieListApp.swift in Sources */,
 				A9CEF26928F005C100F454BE /* Date+.swift in Sources */,
