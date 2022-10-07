@@ -17,7 +17,10 @@
 		A9CEF26928F005C100F454BE /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEF26828F005C100F454BE /* Date+.swift */; };
 		A9CEF26F28F0065700F454BE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEF26E28F0065700F454BE /* API.swift */; };
 		A9CEF27328F0069D00F454BE /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEF27228F0069D00F454BE /* NetworkRequest.swift */; };
-		A9CEF27528F00AF500F454BE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9CEF27428F00AF500F454BE /* Info.plist */; };
+		A9CEF27A28F00C4300F454BE /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEF27928F00C4300F454BE /* MockAPI.swift */; };
+		A9CEF27C28F00C4E00F454BE /* MockNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEF27B28F00C4E00F454BE /* MockNetworkRequest.swift */; };
+		A9CEF28028F0123B00F454BE /* NetworkRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEF27F28F0123B00F454BE /* NetworkRequestTests.swift */; };
+		A9CEF28228F0146200F454BE /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEF28128F0146200F454BE /* APITests.swift */; };
 		A9EA7B3228EC206B0030F0A4 /* Entity.json in Resources */ = {isa = PBXBuildFile; fileRef = A9EA7B2D28EC206B0030F0A4 /* Entity.json */; };
 		A9EA7B3328EC206B0030F0A4 /* EntityDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA7B2E28EC206B0030F0A4 /* EntityDecodingTests.swift */; };
 		A9EA7B3428EC206B0030F0A4 /* ToyMovieListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA7B2F28EC206B0030F0A4 /* ToyMovieListTests.swift */; };
@@ -47,7 +50,10 @@
 		A9CEF26828F005C100F454BE /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		A9CEF26E28F0065700F454BE /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		A9CEF27228F0069D00F454BE /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
-		A9CEF27428F00AF500F454BE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9CEF27928F00C4300F454BE /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
+		A9CEF27B28F00C4E00F454BE /* MockNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkRequest.swift; sourceTree = "<group>"; };
+		A9CEF27F28F0123B00F454BE /* NetworkRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestTests.swift; sourceTree = "<group>"; };
+		A9CEF28128F0146200F454BE /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
 		A9EA7B2D28EC206B0030F0A4 /* Entity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Entity.json; sourceTree = "<group>"; };
 		A9EA7B2E28EC206B0030F0A4 /* EntityDecodingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityDecodingTests.swift; sourceTree = "<group>"; };
 		A9EA7B2F28EC206B0030F0A4 /* ToyMovieListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToyMovieListTests.swift; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				A9EA7B2F28EC206B0030F0A4 /* ToyMovieListTests.swift */,
+				A9CEF27628F00C2000F454BE /* Network */,
 				A9EA7B3028EC206B0030F0A4 /* Extension */,
 				A9EA7B2C28EC206B0030F0A4 /* Model */,
 			);
@@ -105,7 +112,6 @@
 			children = (
 				A9CEF25528F0055300F454BE /* Preview Content */,
 				A9CEF25328F0055300F454BE /* Assets.xcassets */,
-				A9CEF27428F00AF500F454BE /* Info.plist */,
 				A9CEF25428F0055300F454BE /* ToyMovieListApp.swift */,
 				A9CEF26C28F0063700F454BE /* Util */,
 				A9CEF26728F005B200F454BE /* Extension */,
@@ -127,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				A9CEF25828F0055300F454BE /* Entity */,
-				A9EA7B3028EC206B0030F0A4 /* Extension */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +178,25 @@
 				A9CEF27228F0069D00F454BE /* NetworkRequest.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		A9CEF27628F00C2000F454BE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A9CEF27728F00C2900F454BE /* Mock */,
+				A9CEF27F28F0123B00F454BE /* NetworkRequestTests.swift */,
+				A9CEF28128F0146200F454BE /* APITests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A9CEF27728F00C2900F454BE /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				A9CEF27928F00C4300F454BE /* MockAPI.swift */,
+				A9CEF27B28F00C4E00F454BE /* MockNetworkRequest.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		A9EA7B2C28EC206B0030F0A4 /* Model */ = {
@@ -276,7 +300,6 @@
 			files = (
 				A9CEF26128F0055300F454BE /* Preview Assets.xcassets in Resources */,
 				A9CEF25F28F0055300F454BE /* Assets.xcassets in Resources */,
-				A9CEF27528F00AF500F454BE /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9CEF28228F0146200F454BE /* APITests.swift in Sources */,
+				A9CEF27C28F00C4E00F454BE /* MockNetworkRequest.swift in Sources */,
+				A9CEF27A28F00C4300F454BE /* MockAPI.swift in Sources */,
+				A9CEF28028F0123B00F454BE /* NetworkRequestTests.swift in Sources */,
 				A9EA7B3328EC206B0030F0A4 /* EntityDecodingTests.swift in Sources */,
 				A9EA7B3528EC206B0030F0A4 /* XCTTestCase.swift in Sources */,
 				A9EA7B3428EC206B0030F0A4 /* ToyMovieListTests.swift in Sources */,

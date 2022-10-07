@@ -13,12 +13,11 @@ enum NetworkError: Error {
 	case invalidRequest
 }
 
-protocol Requestable {
-	associatedtype Item
-	func request() -> AnyPublisher<Item, NetworkError>
+protocol NetworkRequestable {
+	func request() -> AnyPublisher<NetworkResponse, NetworkError>
 }
 
-struct NetworkRequest<Item: NetworkResponse>: Requestable {
+struct NetworkRequest<Item: NetworkResponse>: NetworkRequestable {
 	
 	let url: URL
 	
