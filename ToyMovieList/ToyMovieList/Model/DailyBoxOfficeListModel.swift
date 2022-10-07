@@ -23,10 +23,13 @@ final class DailyBoxOfficeListModel {
 		self.api = api
 	}
 	
-	func fetch() {
+	func fetch(completion: @escaping () -> Void) {
 		self.api.get(detail: .dailyBoxOfficeList)
 			.sink(
-				receiveCompletion: { _ in print("\(#function) completion") },
+				receiveCompletion: { _ in
+					print("\(#function) completion")
+					completion()
+				},
 				receiveValue: { response in
 					guard let result = response as? DailyBoxOfficeResult else {
 						return
