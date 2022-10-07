@@ -15,7 +15,8 @@ struct MockNetworkRequest: NetworkRequestable {
 	init(base baseURL: URL, queries: [String: String]) { }
 	
 	func request() -> AnyPublisher<NetworkResponse, NetworkError> {
-		Just(DailyBoxOfficeResult(page: .EMPTY))
+		let list = [DailyBoxOfficeMovie(id: "TEST", name: "TEST", changedRate: "TEST")]
+		return Just(DailyBoxOfficeResult(page: .init(name: "TEST", list: list)))
 			.setFailureType(to: Error.self)
 			.mapError({ NetworkError.request($0) })
 			.eraseToAnyPublisher()

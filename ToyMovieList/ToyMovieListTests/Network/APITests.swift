@@ -25,10 +25,10 @@ class APITests: XCTestCase {
 		cancellables = nil
 	}
 
-	func test_API_getDailyBoxOfficeList메서드_호출시_데이터전달됨() throws {
+	func test_API_get메서드_호출시_데이터전달됨() throws {
 		// give
 		let expectation = XCTestExpectation(description: "API")
-		let empty = DailyBoxOfficeResult(page: .EMPTY)
+		let test = "TEST"
 		
 		// when
 		self.sut.get(detail: .dailyBoxOfficeList)
@@ -39,7 +39,7 @@ class APITests: XCTestCase {
 					
 					// then
 					XCTAssertNotNil(value)
-					XCTAssertEqual((value as! DailyBoxOfficeResult).page.name, empty.page.name)
+					XCTAssertEqual((value as! DailyBoxOfficeResult).page.name, test)
 					expectation.fulfill()
 				}
 			)

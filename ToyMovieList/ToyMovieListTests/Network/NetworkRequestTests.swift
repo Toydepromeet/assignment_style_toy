@@ -27,10 +27,10 @@ class NetworkRequestTests: XCTestCase {
 		cancellables = nil
 	}
 
-	func testExample() throws {
+	func test_request메서드_호출시_데이터전달됨() throws {
 		// give
 		let expectation = expectation(description: "NetworkRequest")
-		let empty = DailyBoxOfficeResult(page: .EMPTY)
+		let test = "TEST"
 		
 		// when
 		self.sut.request()
@@ -40,7 +40,7 @@ class NetworkRequestTests: XCTestCase {
 					
 					// then
 					XCTAssertNotNil(value)
-					XCTAssertEqual((value as! DailyBoxOfficeResult).page.name, empty.page.name)
+					XCTAssertEqual((value as! DailyBoxOfficeResult).page.name, test)
 					expectation.fulfill()
 				}
 			)

@@ -202,11 +202,19 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
-		A9EA7B2C28EC206B0030F0A4 /* Model */ = {
+		A9CEF28B28F01D1F00F454BE /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				A9EA7B2D28EC206B0030F0A4 /* Entity.json */,
 				A9EA7B2E28EC206B0030F0A4 /* EntityDecodingTests.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A9EA7B2C28EC206B0030F0A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9CEF28B28F01D1F00F454BE /* Entity */,
 			);
 			path = Model;
 			sourceTree = "<group>";

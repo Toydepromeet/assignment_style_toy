@@ -11,7 +11,7 @@ import XCTest
 import Combine
 
 struct MockAPI: API {
-	
+		
 	private let baseURL: URL
 	private let key: String
 	
@@ -23,7 +23,8 @@ struct MockAPI: API {
 	func get(detail: HTTPMethod.GET) -> AnyPublisher<NetworkResponse, NetworkError> {
 		switch detail {
 		case .dailyBoxOfficeList:
-			return Just(DailyBoxOfficeResult(page: .EMPTY) as NetworkResponse)
+			let list = [DailyBoxOfficeMovie(id: "TEST", name: "TEST", changedRate: "TEST")]
+			return Just(DailyBoxOfficeResult(page: .init(name: "TEST", list: list)) as NetworkResponse)
 				.setFailureType(to: Error.self)
 				.mapError({ NetworkError.request($0) })
 				.eraseToAnyPublisher()
